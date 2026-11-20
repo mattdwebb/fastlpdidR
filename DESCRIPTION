@@ -1,0 +1,10 @@
+Package: fastlpdidR
+Type: Package
+Title: Native Reference Local Projections Difference in Differences
+Version: 0.1.0
+Authors@R: person("Matthew D.", "Webb", email="matt.webb@carleton.ca", role=c("aut", "cre"))
+Description: Reference DGJT panel LP-DiD with explicit pooled windows, variance
+    weighting and equal-treated weighting. Native R implementation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: stats

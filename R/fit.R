@@ -134,7 +134,7 @@ fit <- function(data, y, time, unit=NULL, gvar=NULL, treatment=NULL,
       rows <- list(); seen <- paste(observed,collapse=",")
       for(i in seq_len(max(1000,100*R))) {
         a <- observed[sample.int(length(observed))]; k <- paste(a,collapse=",")
-        if(!k %in% seen) {rows[[length(rows)+1]]<-a; seen<-c(seen,k)}
+        if(!(k %in% seen)) {rows[[length(rows)+1]]<-a; seen<-c(seen,k)}
         if(length(rows)==R) break
       }
       if(length(rows)!=R) stop("unique sampling exhausted; supply assignments")
